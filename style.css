@@ -1,1 +1,17 @@
+body {
+      margin: 0;
+      background: #f8f5ef;
+      font-family: 'Comic Sans MS', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    canvas {
+      border: 3px solid #d8d2c2;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      margin-bottom: 10px;
+      background: #fefcf9;
+    }
 
