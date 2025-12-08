@@ -14,4 +14,20 @@ body {
       margin-bottom: 10px;
       background: #fefcf9;
     }
+ .controls {
+      display: flex;
+      gap: 10px;
+    }
+    button {
+      font-size: 16px;
+      background: #ffe680;
+      border: 2px solid #d8b400;
+      border-radius: 6px;
+      padding: 8px 14px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    button:hover {
+      background: #fff0b3;
+    }
 
