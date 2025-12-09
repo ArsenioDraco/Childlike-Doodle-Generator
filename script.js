@@ -77,4 +77,14 @@ let showGrid = false;
       crayonLine(40, -20, 0, -60, baseColor);
       crayonLine(-40, -20, 40, -20, baseColor);
     }
+function drawStickman() {
+      let c = color(0);
+      crayonLine(0, -20, 0, 20, c);
+      crayonLine(0, 0, -15, 10, c);
+      crayonLine(0, 0, 15, 10, c);
+      crayonLine(0, 20, -10, 40, c);
+      crayonLine(0, 20, 10, 40, c);
+      noFill();
+      ellipse(0, -30, 20, 20);
+    }
 
