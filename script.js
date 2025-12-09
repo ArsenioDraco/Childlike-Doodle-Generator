@@ -57,4 +57,15 @@ let showGrid = false;
       }
       endShape();
     }
+ function drawSun() {
+      let c = color(random(['#FFD60A', '#FF9500', '#FFCC00']));
+      noStroke();
+      for (let i = 0; i < 10; i++) {
+        fill(red(c), green(c), blue(c), 50);
+        ellipse(random(-10, 10), random(-10, 10), 80 + random(-10, 10));
+      }
+      for (let i = 0; i < 12; i++) {
+        crayonLine(0, 0, cos(TWO_PI * i / 12) * 60, sin(TWO_PI * i / 12) * 60, c);
+      }
+    }
 
