@@ -43,4 +43,18 @@ let showGrid = false;
         pop();
       }
     }
+ function crayonLine(x1, y1, x2, y2, c) {
+      stroke(c);
+      strokeWeight(random(2, 5));
+      noFill();
+      let steps = dist(x1, y1, x2, y2) / 5;
+      beginShape();
+      for (let i = 0; i <= steps; i++) {
+        let t = i / steps;
+        let x = lerp(x1, x2, t) + random(-2, 2);
+        let y = lerp(y1, y2, t) + random(-2, 2);
+        vertex(x, y);
+      }
+      endShape();
+    }
 
