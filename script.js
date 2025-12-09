@@ -9,4 +9,14 @@ let showGrid = false;
         clear();
         generateDrawing();
       });
+ document.getElementById('saveDrawing').addEventListener('click', () => {
+        saveCanvas('childlike_doodle', 'png');
+      });
+
+      document.getElementById('toggleGrid').addEventListener('click', () => {
+        showGrid = !showGrid;
+        clear();
+        generateDrawing();
+      });
+    }
 
