@@ -68,4 +68,13 @@ let showGrid = false;
         crayonLine(0, 0, cos(TWO_PI * i / 12) * 60, sin(TWO_PI * i / 12) * 60, c);
       }
     }
+   function drawHouse() {
+      let baseColor = color(random(['#FF3B30', '#FF2D55', '#34C759', '#0A84FF']));
+      fill(red(baseColor), green(baseColor), blue(baseColor), 120);
+      noStroke();
+      rect(-30, -20, 60, 40);
+      crayonLine(-40, -20, 0, -60, baseColor);
+      crayonLine(40, -20, 0, -60, baseColor);
+      crayonLine(-40, -20, 40, -20, baseColor);
+    }
 
