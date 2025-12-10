@@ -87,4 +87,16 @@ function drawStickman() {
       noFill();
       ellipse(0, -30, 20, 20);
     }
+ function drawFlower() {
+      let petals = floor(random(4, 8));
+      let petalColor = color(random(['#FF2D55', '#AF52DE', '#FF9500', '#FFD60A']));
+      for (let i = 0; i < petals; i++) {
+        let angle = TWO_PI * i / petals;
+        let px = cos(angle) * 15;
+        let py = sin(angle) * 15;
+        for (let j = 0; j < 8; j++) {
+          fill(red(petalColor), green(petalColor), blue(petalColor), 60);
+          noStroke();
+          ellipse(px + random(-2, 2), py + random(-2, 2), 15 + random(-3, 3));
+        }
 
