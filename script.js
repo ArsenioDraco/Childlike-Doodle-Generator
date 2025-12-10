@@ -99,4 +99,13 @@ function drawStickman() {
           noStroke();
           ellipse(px + random(-2, 2), py + random(-2, 2), 15 + random(-3, 3));
         }
+ }
+      fill('#34C759');
+      ellipse(0, 0, 15);
+      stroke('#34C759');
+      crayonLine(0, 10, 0, 50, '#34C759');
+    }
 
+    function drawTree() {
+      let trunkColor = '#8B5A2B';
+      crayonLine(0, 0, 1, 30
