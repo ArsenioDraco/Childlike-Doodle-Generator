@@ -108,4 +108,11 @@ function drawStickman() {
 
     function drawTree() {
       let trunkColor = '#8B5A2B';
-      crayonLine(0, 0, 1, 30
+      crayonLine(0, 0, 0, 40, trunkColor);
+         for (let i = 0; i < 20; i++) {
+        fill(0, random(150, 255), 0, 50);
+        noStroke();
+        ellipse(random(-20, 20), random(-30, 0), random(30, 50));
+      }
+    }
+
