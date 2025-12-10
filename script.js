@@ -115,4 +115,16 @@ function drawStickman() {
         ellipse(random(-20, 20), random(-30, 0), random(30, 50));
       }
     }
+function drawName() {
+      let names = ['ME', 'MOM', 'DAD', 'HI', 'DOG'];
+      let txt = random(names);
+      fill(random(['#0A84FF', '#FF3B30', '#FF9500', '#AF52DE']));
+      textSize(random(20, 40));
+      push();
+      rotate(random(-0.2, 0.2));
+      for (let i = 0; i < txt.length; i++) {
+        text(txt[i], i * 25 + random(-5, 5), random(-5, 5));
+      }
+      pop();
+    }
 
